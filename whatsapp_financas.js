@@ -487,4 +487,6 @@ const express = require("express");
 const app = express();
 
 app.get("/", (req, res) => res.send("WA Finanças rodando 🚀"));
-app.listen(3000, () => console.log("🌐 Servidor ativo na porta 3000 — Replit não vai dormir 😎"));
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => console.log(`🌐 Servidor ativo na porta ${PORT} — Replit não vai dormir 😎`));
+
