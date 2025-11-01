@@ -481,3 +481,10 @@ client.on("message_create", async (msg) => {
 });
 
 client.initialize();
+
+// 🔄 Mantém o Replit ativo 24h
+const express = require("express");
+const app = express();
+
+app.get("/", (req, res) => res.send("WA Finanças rodando 🚀"));
+app.listen(3000, () => console.log("🌐 Servidor ativo na porta 3000 — Replit não vai dormir 😎"));
